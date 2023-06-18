@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Jainil-Shah/static/css/main.4277d10e.css",
+    "main.js": "/Jainil-Shah/static/js/main.63acf674.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Jainil-Shah/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/Jainil-Shah/index.html",
+    "main.4277d10e.css.map": "/Jainil-Shah/static/css/main.4277d10e.css.map",
+    "main.63acf674.js.map": "/Jainil-Shah/static/js/main.63acf674.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Jainil-Shah/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4277d10e.css",
+    "static/js/main.63acf674.js"
+  ]
+}
