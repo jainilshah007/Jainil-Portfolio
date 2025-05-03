@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from './Globalstyle';
 import Projects from './projects';
-
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const theme = {
@@ -42,6 +42,7 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <Analytics/>
     </ThemeProvider>
   );
 };
