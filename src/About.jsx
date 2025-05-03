@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className="Main_content">
         <p>
-          Hey there! I'm a recent graduate, currently working as a front-end developer remotely. Guess what? I've just finished working on a fantastic hospital website using React. If you're curious, you can check it out <Link href="https://sudeepent.netlify.app/" target="_blank" rel="noopener noreferrer">[here]</Link>.<br/><br/>
+         Hey there! I'm a full-stack and Gen AI developer, always vibing with new tech. Guess what? I've just finished working on a fantastic little project on <Link>MCP(Model Context Protocol)</Link>. If you're curious, you can check it out <Link href="https://github.com/jainilshah007/mcp_memory_context/" target="_blank" rel="noopener noreferrer">[here]</Link>.<br/><br/>
           My journey into development started with a simple curiosity about how things work behind the scenes, and it quickly grew into a passion. I love solving problems, building creative solutions, and constantly learning. The thrill of turning ideas into real, impactful projects is what drives me every day.For me, being a developer is more than just a job it’s a journey of growth and discovery. I’m excited by the challenges, the learning, and the opportunity to make a difference with the work I do.<br/><br/>
           My path to becoming a developer has been a unique one. I'm actually self-taught, but I do hold a degree in Electronics and Engineering from Birla Vishvakrama Mahavidhyalaya <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">(BVM, Vidhyanagar)</Link>. Computers and the internet have fascinated me since I first laid eyes on Google back in 8th grade. That was a mind-blowing experience!<br/><br/>
           In the past, Python has been my go-to language, and I've even worked on some exciting projects in the realm of <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferrer">Data science</Link>. By the way, I also had the honor of being a Lead in my college's <Link href="https://example.com" target="_blank" rel="noopener noreferrer">Technical Club</Link>, which allowed me to sharpen my leadership skills.<br/><br/>
@@ -30,7 +30,7 @@ const About = () => {
           <Link href="https://open.spotify.com/user/31owygju4vhxswzvsgqbjbsce5wq?si=iPcuPG3VSWG27kSXTA9kiw&utm_source=copy-link" target="_blank" rel="noopener noreferre"><FaSpotify /></Link>
         </div>
         <div className="resume">
-          If you're interested, you can take a look at my <Link href="https://drive.google.com/file/d/1GYVd9ai2-wyxEJFhfDmXT2_-BzTljZpC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">[resume]</Link> — and if you're still intrigued, thanks! You can reach out to me at Jainil.
+          If you're interested, you can take a look at my <Link href="https://drive.google.com/file/d/1IJPBl6-DT7hg25Of6jCF4xLs4SwpxMw1/view?usp=drive_link" target="_blank" rel="noopener noreferrer">[resume]</Link> — and if you're still intrigued, thanks! You can reach out to me at jainilcrshah@gmail.com.
         </div>
       </div>
     </Wrapper>
