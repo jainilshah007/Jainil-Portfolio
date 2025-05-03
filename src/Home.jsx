@@ -101,7 +101,7 @@ const Wrapper = styled.section`
     .hey {
       width: 80vw;
       text-align: start;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       line-height: 4.21rem;
     }
 
