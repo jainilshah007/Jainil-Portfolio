@@ -70,7 +70,7 @@ const Navbar = () => {
             <NavLink className="navbar-link" to="/About">About</NavLink>
           </li>
           <li>
-            <NavLink className="navbar-link" to="/Uses">Uses</NavLink>
+            <NavLink className="navbar-link" to="/project">Projects</NavLink>
           </li>
           <li>
             <div className="github">

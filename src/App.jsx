@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from './Globalstyle';
+import Projects from './projects';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/uses" element={<Uses />} />
+          <Route path="/project" element={<Projects />} />
           <Route path="/movies" element={<Movies />} />
         </Routes>
         <Footer />
