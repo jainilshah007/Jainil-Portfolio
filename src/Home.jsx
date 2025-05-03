@@ -11,32 +11,32 @@ const Home = () => {
         <h1 className="hey">Hey, I'm Jainil! 👋</h1>
         <div className="Main_content">
           <p>
-            Lately, I’ve been deep in the world of{' '}
-            <Link href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" rel="noopener noreferrer">
+            Recently, I’ve been diving into{' '}
+            <Link>
               AI
-            </Link> chasing ideas, breaking things, fixing them, and getting way too excited when something finally works.
-            I started exploring how machines can understand{' '}
-            <Link href="https://en.wikipedia.org/wiki/Document" target="_blank" rel="noopener noreferrer">
+            </Link>, breaking things, fixing them, and getting excited when stuff works.
+            I’m exploring how machines read{' '}
+            <Link>
               documents
-            </Link>, make sense of context, and even help people make better decisions.
-            That curiosity pulled me into building tools that think a little, remember a little, and (sometimes) surprise me.
+            </Link>, understand context, and support better decisions.
+            It’s led me to build tools that think, remember, and sometimes surprise me.
             <br/><br/>
-            Apart from coding, I enjoy playing{' '}
+            {/* Outside tech, I enjoy{' '}
             <Link href="https://www.realmadrid.com/en" target="_blank" rel="noopener noreferrer">
-              Football
-            </Link>, watching sports, and occasionally indulging in the thrill of{' '}
+              football
+            </Link>, watching games, and the occasional race in{' '}
             <Link href="https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)" target="_blank" rel="noopener noreferrer">
               NFS: Most Wanted
             </Link>.
-            <br/><br/>
-            This website is my cherished labor of love. Although it may appear simple, I've had a blast{' '}
-            <Link href="https://en.wikipedia.org/wiki/Overengineering" target="_blank" rel="noopener noreferrer">
-              over-engineering
-            </Link> it. 
-            While it doesn't need all the bells and whistles, I've had genuine fun building them anyway.
-            <br/><br/>
-            I dream of building something bigger someday maybe a product, maybe a company. 
-            For now, I’m just following the spark, one experiment at a time.
+            <br/><br/> */}
+            This site is a little personal project. Someday I hope to build something bigger a product or maybe a company. 
+            For now, I’m just experimenting and following the spark.
+            {/* I’ve{' '}
+            <Link>
+              over-engineered
+            </Link> for fun. It didn’t need all the extras, but I built them anyway.
+            <br/><br/> */}
+             
           </p>
         </div>
       </div>

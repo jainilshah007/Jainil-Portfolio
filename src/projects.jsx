@@ -37,7 +37,7 @@ const Projects = () => {
             </p>
             <ul>
               <li><strong>Tech Stack:</strong> Python, LangChain, OpenAI API, Hugging Face, Vector DB, FastAPI</li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/qbp-genai-tool" target="_blank" rel="noopener noreferrer">github.com/yourusername/qbp-genai-tool</a></li>
+              {/* <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/qbp-genai-tool" target="_blank" rel="noopener noreferrer">github.com/yourusername/qbp-genai-tool</a></li> */}
             </ul>
           </ProjectCard>
 
@@ -50,7 +50,7 @@ const Projects = () => {
             </p>
             <ul>
               <li><strong>Tech Stack:</strong> Python, MCP, FastAPI, LangChain, Redis, OpenAI API</li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/chat-context-mcp" target="_blank" rel="noopener noreferrer">github.com/yourusername/chat-context-mcp</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/jainilshah007/mcp_memory_context" target="_blank" rel="noopener noreferrer">github.com/yourusername/chat-context-mcp</a></li>
             </ul>
           </ProjectCard>
 
@@ -63,7 +63,7 @@ const Projects = () => {
             </p>
             <ul>
               <li><strong>Tech Stack:</strong> Python, AutoGen, Azure AI, LangChain, LLM Agents, Bing Search API</li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/stock-agent-system" target="_blank" rel="noopener noreferrer">github.com/yourusername/stock-agent-system</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/jainilshah007/Stock-Market-Analysis-agent" target="_blank" rel="noopener noreferrer">github.com/yourusername/stock-agent-system</a></li>
             </ul>
           </ProjectCard>
         </section>
@@ -75,7 +75,7 @@ const Projects = () => {
             • Integrated GenAI using LangChain + RAG with OpenAI & Hugging Face APIs.<br />
             • Deployed using Azure, Docker, Kubernetes.<br />
             • Developed REST APIs and database logic with MySQL & Django ORM.<br />
-            • Setup SonarQube for CI-based code quality monitoring.
+            
           </p>
         </section>
       </div>
