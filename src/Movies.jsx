@@ -24,8 +24,8 @@ const Movies = () => {
     animation: ${chameleonAnimation} 12s infinite;
     transition-timing-function: linear;
   `;
-  
-  
+
+
 
   return (
     <Wrapper>
@@ -157,7 +157,7 @@ const Wrapper = styled.section`
   .arrow-content {
     margin-right: 0.5rem;
     transition: color 0.3s ease;
-    color:white;
+    color: ${({ theme }) => theme.colors.body};
   }
 
   .arrow-content:hover {

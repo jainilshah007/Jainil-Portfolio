@@ -10,7 +10,7 @@ const Contact = () => {
       font-size: 1.75rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
-      color:RGB(147, 112, 219);
+      color: ${({ theme }) => theme.colors.helper};
     }
 
     .container {
@@ -41,7 +41,7 @@ const Contact = () => {
           transition: border-color 0.3s ease;
 
           &:focus {
-            border-color: #5856d6;
+            border-color: ${({ theme }) => theme.colors.helper};
             outline: none;
           }
         }
@@ -53,7 +53,7 @@ const Contact = () => {
         input[type='submit'] {
           margin-top: 0.5rem;
           padding: 0.7rem 1rem;
-          background-color: #5856d6;
+          background-color: ${({ theme }) => theme.colors.helper};
           color: white;
           border: none;
           border-radius: 0.5rem;
@@ -63,7 +63,7 @@ const Contact = () => {
           transition: transform 0.2s ease, background-color 0.3s ease;
 
           &:hover {
-            background-color: #4744c1;
+            opacity: 0.85;
             transform: scale(0.97);
           }
         }

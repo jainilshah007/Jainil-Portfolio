@@ -6,13 +6,13 @@ import { IoMdMail } from "react-icons/io";
 
 const Navbar = () => {
   const Link = styled.a`
-    color: white;
+    color: ${({ theme }) => theme.colors.body};
     text-decoration: none;
     cursor: pointer;
   
     &:hover {
       text-decoration: underline;
-      color: RGB(147, 112, 219);
+      color: ${({ theme }) => theme.colors.helper};
     }
   `;
 
@@ -32,7 +32,7 @@ const Navbar = () => {
       }
 
       .navbar-link {
-        color: white;
+        color: ${({ theme }) => theme.colors.body};
         font-size: 1.5rem;
         text-decoration: none;
 

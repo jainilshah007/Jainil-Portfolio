@@ -10,23 +10,23 @@ const About = () => {
   useScrollToTop();
   return (
     <Wrapper>
-      <div className="main_line"> 
+      <div className="main_line">
         <p>/about</p>
       </div>
       <div className="Main_content">
         <p>
-         Hey there! I'm a full-stack and Gen AI developer, always vibing with new tech. Guess what? I've just finished working on a fantastic little project on <Link>MCP(Model Context Protocol)</Link>. If you're curious, you can check it out <Link href="https://github.com/jainilshah007/mcp_memory_context/" target="_blank" rel="noopener noreferrer">[here]</Link>.<br/><br/>
-          My journey into development started with a simple curiosity about how things work behind the scenes, and it quickly grew into a passion. I love solving problems, building creative solutions, and constantly learning. The thrill of turning ideas into real, impactful projects is what drives me every day.For me, being a developer is more than just a job it’s a journey of growth and discovery. I’m excited by the challenges, the learning, and the opportunity to make a difference with the work I do.<br/><br/>
-          My path to becoming a developer has been a unique one. I'm actually self-taught, but I do hold a degree in Electronics and Engineering from Birla Vishvakrama Mahavidhyalaya <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">(BVM, Vidhyanagar)</Link>. Computers and the internet have fascinated me since I first laid eyes on Google back in 8th grade. That was a mind-blowing experience!<br/><br/>
-          In the past, Python has been my go-to language, and I've even worked on some exciting projects in the realm of <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferrer">Data science</Link>. By the way, I also had the honor of being a Lead in my college's <Link href="https://example.com" target="_blank" rel="noopener noreferrer">Technical Club</Link>, which allowed me to sharpen my leadership skills.<br/><br/>
-          Outside the world of programming, there's a side of me that's deeply passionate about sports, particularly <Link href="https://example.com">Football</Link>. I proudly wear the badge of a Pro Madridista and genuinely admire the beauty of sports in general. And let's not forget my love for  <NavLink className="navbar-link" to="/movies" > [Movies!]</NavLink> From timeless classics to Bollywood masala, I can't resist the allure of a good film.<br/><br/>
+          Hey there! I'm a full-stack and Gen AI developer, always vibing with new tech. Guess what? I've just finished working on a fantastic little project on <Link>MCP(Model Context Protocol)</Link>. If you're curious, you can check it out <Link href="https://github.com/jainilshah007/mcp_memory_context/" target="_blank" rel="noopener noreferrer">[here]</Link>.<br /><br />
+          My journey into development started with a simple curiosity about how things work behind the scenes, and it quickly grew into a passion. I love solving problems, building creative solutions, and constantly learning. The thrill of turning ideas into real, impactful projects is what drives me every day.For me, being a developer is more than just a job it’s a journey of growth and discovery. I’m excited by the challenges, the learning, and the opportunity to make a difference with the work I do.<br /><br />
+          My path to becoming a developer has been a unique one. I'm actually self-taught, but I do hold a degree in Electronics and Engineering from Birla Vishvakrama Mahavidhyalaya <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">(BVM, Vidhyanagar)</Link>. Computers and the internet have fascinated me since I first laid eyes on Google back in 8th grade. That was a mind-blowing experience!<br /><br />
+          In the past, Python has been my go-to language, and I've even worked on some exciting projects in the realm of <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferrer">Data science</Link>. By the way, I also had the honor of being a Lead in my college's <Link href="https://example.com" target="_blank" rel="noopener noreferrer">Technical Club</Link>, which allowed me to sharpen my leadership skills.<br /><br />
+          Outside the world of programming, there's a side of me that's deeply passionate about sports, particularly <Link href="https://example.com">Football</Link>. I proudly wear the badge of a Pro Madridista and genuinely admire the beauty of sports in general. And let's not forget my love for  <NavLink className="navbar-link" to="/movies" > [Movies!]</NavLink> From timeless classics to Bollywood masala, I can't resist the allure of a good film.<br /><br />
           You can check me out on the following platforms:
         </p>
         <div className="icons">
-        <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferre"> <FaGithub /></Link>
-        <Link href="https://twitter.com/jainils007" target="_blank" rel="noopener noreferre"> <FaTwitter /></Link>
-        <Link href="https://www.linkedin.com/in/jainil-shah07/" target="_blank" rel="noopener noreferre"> <FaLinkedin /></Link>
-        <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=jainilcrshah@gmail.com" target="_blank" rel="noopener noreferre"> <IoMdMail /></Link> 
+          <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferre"> <FaGithub /></Link>
+          <Link href="https://twitter.com/jainils007" target="_blank" rel="noopener noreferre"> <FaTwitter /></Link>
+          <Link href="https://www.linkedin.com/in/jainil-shah07/" target="_blank" rel="noopener noreferre"> <FaLinkedin /></Link>
+          <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=jainilcrshah@gmail.com" target="_blank" rel="noopener noreferre"> <IoMdMail /></Link>
           <Link href="https://open.spotify.com/user/31owygju4vhxswzvsgqbjbsce5wq?si=iPcuPG3VSWG27kSXTA9kiw&utm_source=copy-link" target="_blank" rel="noopener noreferre"><FaSpotify /></Link>
         </div>
         <div className="resume">
@@ -38,7 +38,7 @@ const About = () => {
 };
 
 const Link = styled.a`
-  color: RGB(147, 112, 219);
+  color: ${({ theme }) => theme.colors.helper};
   text-decoration: none;
   cursor: pointer;
 
@@ -60,8 +60,7 @@ const Wrapper = styled.section`
   }
 .navbar-link{
   text-decoration: none;
-  color: RGB(147, 112, 219);
-  text-decoration: none;
+  color: ${({ theme }) => theme.colors.helper};
   cursor: pointer;
 
   &:hover {

@@ -19,7 +19,7 @@ const Uses = () => {
   `;
 
   const Link = styled.a`
-    color: RGB(147, 112, 219);
+    color: ${({ theme }) => theme.colors.helper};
     text-decoration: none;
     cursor: pointer;
     &:hover {
@@ -170,9 +170,8 @@ const Wrapper = styled.section`
   }
 
   .text_apps {
-    color: white;
+    color: ${({ theme }) => theme.colors.body};
     margin-left: 0.625rem;
-    
     font-weight: 400;
   }
 

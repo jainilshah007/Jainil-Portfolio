@@ -75,7 +75,7 @@ const Projects = () => {
             • Integrated GenAI using LangChain + RAG with OpenAI & Hugging Face APIs.<br />
             • Deployed using Azure, Docker, Kubernetes.<br />
             • Developed REST APIs and database logic with MySQL & Django ORM.<br />
-            
+
           </p>
         </section>
       </div>
@@ -113,7 +113,7 @@ const Wrapper = styled.section`
 
   h2 {
     margin-bottom: 1rem;
-    color: #5856d6;
+    color: ${({ theme }) => theme.colors.helper};
   }
 
   h3 {
