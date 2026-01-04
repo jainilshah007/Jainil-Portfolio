@@ -15,22 +15,65 @@ const About = () => {
       </div>
       <div className="Main_content">
         <p>
-          Hey there! I'm a full-stack and Gen AI developer, always vibing with new tech. Guess what? I've just finished working on a fantastic little project on <Link>MCP(Model Context Protocol)</Link>. If you're curious, you can check it out <Link href="https://github.com/jainilshah007/mcp_memory_context/" target="_blank" rel="noopener noreferrer">[here]</Link>.<br /><br />
-          My journey into development started with a simple curiosity about how things work behind the scenes, and it quickly grew into a passion. I love solving problems, building creative solutions, and constantly learning. The thrill of turning ideas into real, impactful projects is what drives me every day.For me, being a developer is more than just a job it’s a journey of growth and discovery. I’m excited by the challenges, the learning, and the opportunity to make a difference with the work I do.<br /><br />
-          My path to becoming a developer has been a unique one. I'm actually self-taught, but I do hold a degree in Electronics and Engineering from Birla Vishvakrama Mahavidhyalaya <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">(BVM, Vidhyanagar)</Link>. Computers and the internet have fascinated me since I first laid eyes on Google back in 8th grade. That was a mind-blowing experience!<br /><br />
-          In the past, Python has been my go-to language, and I've even worked on some exciting projects in the realm of <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferrer">Data science</Link>. By the way, I also had the honor of being a Lead in my college's <Link href="https://example.com" target="_blank" rel="noopener noreferrer">Technical Club</Link>, which allowed me to sharpen my leadership skills.<br /><br />
-          Outside the world of programming, there's a side of me that's deeply passionate about sports, particularly <Link href="https://example.com">Football</Link>. I proudly wear the badge of a Pro Madridista and genuinely admire the beauty of sports in general. And let's not forget my love for  <NavLink className="navbar-link" to="/movies" > [Movies!]</NavLink> From timeless classics to Bollywood masala, I can't resist the allure of a good film.<br /><br />
-          You can check me out on the following platforms:
+          I'm someone who gets genuinely excited when things click—when a model finally learns something useful,
+          or when an idea that felt abstract starts working in code.
+          <br /><br />
+          My interest in AI started with the{' '}
+          <Link href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">
+            "Attention is All You Need"
+          </Link>{' '}
+          paper. Reading it changed how I think about language, context, and machines.
+          It made me want to understand transformers not just as tools, but as ideas worth exploring deeply.
+          <br /><br />
+          Lately, I've been spending time at the intersection of{' '}
+          <Link>AI</Link> and{' '}
+          <Link>Web3</Link>—building things like{' '}
+          <Link href="https://github.com/jainilshah007/BlockAudit" target="_blank" rel="noopener noreferrer">
+            RAG-based contract analysis
+          </Link>,{' '}
+          <Link href="https://github.com/jainilshah007/finetune-on-solidity" target="_blank" rel="noopener noreferrer">
+            fine-tuning models on Solidity
+          </Link>, and{' '}
+          <Link href="https://github.com/jainilshah007/EIP-Navigator" target="_blank" rel="noopener noreferrer">
+            multi-agent systems for Ethereum standards
+          </Link>.
+          Not because I have all the answers, but because I find the problems interesting.
+          <br /><br />
+          I'm self-taught in most of what I do. I have a degree in Electronics from{' '}
+          <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">
+            BVM, Vidhyanagar
+          </Link>, but computers pulled me in a different direction. The first time I saw Google in 8th grade,
+          something shifted. I've been curious ever since.
+          <br /><br />
+          Currently working at{' '}
+          <Link>Capgemini</Link>{' '}
+          as an Analyst, building full-stack apps and integrating AI into real workflows.
+          It's taught me that production is where ideas get tested—and humbled.
+          <br /><br />
+          Outside work, I watch a lot of{' '}
+          <NavLink className="navbar-link" to="/movies">movies</NavLink>,
+          follow football (Hala Madrid), and occasionally overthink things.
+          <br /><br />
+          If any of this resonates, feel free to reach out.
         </p>
         <div className="icons">
-          <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferre"> <FaGithub /></Link>
-          <Link href="https://twitter.com/jainils007" target="_blank" rel="noopener noreferre"> <FaTwitter /></Link>
-          <Link href="https://www.linkedin.com/in/jainil-shah07/" target="_blank" rel="noopener noreferre"> <FaLinkedin /></Link>
-          <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=jainilcrshah@gmail.com" target="_blank" rel="noopener noreferre"> <IoMdMail /></Link>
-          <Link href="https://open.spotify.com/user/31owygju4vhxswzvsgqbjbsce5wq?si=iPcuPG3VSWG27kSXTA9kiw&utm_source=copy-link" target="_blank" rel="noopener noreferre"><FaSpotify /></Link>
+          <Link href="https://github.com/jainilshah007" target="_blank" rel="noopener noreferrer"><FaGithub /></Link>
+          <Link href="https://twitter.com/jainils007" target="_blank" rel="noopener noreferrer"><FaTwitter /></Link>
+          <Link href="https://www.linkedin.com/in/jainil-shah07/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
+          <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=jainilcrshah@gmail.com" target="_blank" rel="noopener noreferrer"><IoMdMail /></Link>
+          <Link href="https://open.spotify.com/user/31owygju4vhxswzvsgqbjbsce5wq" target="_blank" rel="noopener noreferrer"><FaSpotify /></Link>
         </div>
         <div className="resume">
-          If you're interested, you can take a look at my <Link href="https://drive.google.com/file/d/1IJPBl6-DT7hg25Of6jCF4xLs4SwpxMw1/view?usp=drive_link" target="_blank" rel="noopener noreferrer">[resume]</Link> — and if you're still intrigued, thanks! You can reach out to me at jainilcrshah@gmail.com.
+          Resumes: <Link href="https://drive.google.com/file/d/12Uy3X-ze3dE86HpC-ucNiTN0FjXhtCJ4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">[AI]</Link> · <Link href="https://drive.google.com/file/d/1iX856RCpwrDg2Z5W7xC2Aun0tBZ2Ewf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">[AI × Web3]</Link>
+        </div>
+
+        <div className="more-section">
+          <h3>More about me</h3>
+          <div className="tabs">
+            <NavLink to="/photographs" className="tab">Photographs</NavLink>
+            <NavLink to="/poems" className="tab">Poems</NavLink>
+            <NavLink to="/movies" className="tab">Movies</NavLink>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -48,48 +91,69 @@ const Link = styled.a`
 `;
 
 const Wrapper = styled.section`
-  .body_content {
-    font-size: 27px;
-    width: 50vw;
-    text-align: start;
-    margin-top: 5rem;
-    line-height: 2.7rem;
-    vertical-align: baseline;
-    font-weight: 400;
-    margin-right: 436px;
-  }
-.navbar-link{
-  text-decoration: none;
-  color: ${({ theme }) => theme.colors.helper};
-  cursor: pointer;
+  .navbar-link {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.helper};
+    cursor: pointer;
 
-  &:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-}
+
   .icons {
     display: flex;
-    gap: 10px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     color: ${({ theme }) => theme.colors.helper};
-    margin-top: 20px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
   }
 
   .resume {
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: start;
+  }
+
+  .more-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    h3 {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .tab {
+      color: ${({ theme }) => theme.colors.helper};
+      text-decoration: underline;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #f5c518;
+      }
+    }
   }
 
   .main_line {
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
+    justify-content: center;
     font-size: 5.62rem;
-    text-align: center;
     margin-top: 50px;
-    transition: color 5s linear;
+    margin-bottom: 2rem;
   }
 
   .Main_content {
@@ -100,22 +164,27 @@ const Wrapper = styled.section`
     margin-right: auto;
     width: 50vw;
     text-align: start;
-    margin-top: 50px;
-    line-height: 27px;
-    vertical-align: baseline;
+    line-height: 1.7rem;
     font-weight: 400;
+    padding-bottom: 2rem;
   }
 
   @media screen and (max-width: 768px) {
     .Main_content {
-      overflow-x: hidden;
-      text-align: start;
-      vertical-align: baseline;
       width: 90vw;
     }
 
     .main_line {
-      width: 90vw;
+      font-size: 3rem;
+    }
+
+    .more-section .tabs {
+      gap: 0.75rem;
+    }
+
+    .more-section .tab {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
     }
   }
 `;

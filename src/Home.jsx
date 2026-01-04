@@ -1,9 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
 import useScrollToTop from './hooks/useScrollToTop';
+
+const quotes = [
+  "Growth is the art of feeling regularly stupid.",
+  "Delusional Optimism is the only way out.",
+  "We only hear the questions we are able to answer."
+];
 
 const Home = () => {
   useScrollToTop();
+  const [currentQuote, setCurrentQuote] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentQuote((prev) => (prev + 1) % quotes.length);
+        setIsVisible(true);
+      }, 300);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Wrapper>
@@ -33,9 +53,11 @@ const Home = () => {
             This site is a little personal project. Someday I hope to build something bigger—a product or maybe a company.
             For now, I'm just experimenting and following the spark.
           </p>
-          <blockquote className="quote">
-            "Growth is the art of feeling regularly stupid."
-          </blockquote>
+          <QuoteContainer>
+            <QuoteText $visible={isVisible}>
+              "{quotes[currentQuote]}"
+            </QuoteText>
+          </QuoteContainer>
         </div>
       </div>
     </Wrapper>
@@ -50,6 +72,32 @@ const Link = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+`;
+
+const fadeOut = keyframes`
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-5px); }
+`;
+
+const QuoteContainer = styled.blockquote`
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid ${({ theme }) => theme.colors.helper};
+  min-height: 3rem;
+`;
+
+const QuoteText = styled.span`
+  display: block;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  animation: ${({ $visible }) => $visible ? fadeIn : fadeOut} 0.3s ease forwards;
 `;
 
 const Wrapper = styled.section`
@@ -103,16 +151,6 @@ const Wrapper = styled.section`
     font-weight: 500;
   }
 
-  .quote {
-    margin-top: 2rem;
-    padding: 1rem 1.5rem;
-    border-left: 3px solid ${({ theme }) => theme.colors.helper};
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   @media screen and (max-width: 768px) {
     .home-main {
       margin-left: 0.1rem;
@@ -137,10 +175,6 @@ const Wrapper = styled.section`
       text-align: start;
       vertical-align: baseline;
       width: 90vw;
-    }
-
-    .quote {
-      padding: 0.75rem 1rem;
     }
   }
 `;

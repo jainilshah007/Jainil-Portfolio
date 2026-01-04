@@ -192,7 +192,7 @@ const Projects = () => {
             <div className="exp-header">
               <div className="company-info">
                 <h3>Capgemini</h3>
-                <span className="role">Analyst</span>
+                <span className="role">Senior Analyst</span>
               </div>
               <div className="exp-meta">
                 <span className="location">Mumbai</span>

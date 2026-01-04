@@ -96,7 +96,7 @@ const Navbar = () => {
           </li>
           <li>
             <div className="github">
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=jainilcrshah@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Link href="mailto:jainilcrshah@gmail.com">
                 <IoMdMail />
               </Link>
             </div>
