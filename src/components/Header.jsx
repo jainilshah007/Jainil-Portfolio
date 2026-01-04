@@ -25,20 +25,21 @@ const Mainheader = styled.header`
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50vw;
+  width: 100%;
 
   .purp_box {
     display: flex;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 90vw;
+    flex-shrink: 0;
   }
 `;
 

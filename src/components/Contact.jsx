@@ -70,9 +70,17 @@ const Contact = () => {
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+      padding: 2rem 0;
+
+      .container {
+        width: 90vw;
+        margin: 0 auto;
+      }
+
       .contact-form {
-        padding: 1rem;
+        padding: 1.25rem;
+        max-width: 100%;
       }
 
       .text_contact {

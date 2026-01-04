@@ -53,17 +53,15 @@ const Navbar = () => {
     }
 
     @media screen and (max-width: 768px) {
-      width: 85vw;
-
       .navbar-list {
-        gap: 1.2vw;
+        gap: 3vw;
 
         .navbar-link {
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
 
         .github {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
     }
