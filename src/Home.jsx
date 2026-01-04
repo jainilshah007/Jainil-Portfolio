@@ -34,7 +34,7 @@ const Home = () => {
             For now, I'm just experimenting and following the spark.
           </p>
           <blockquote className="quote">
-            "winners don't make excuses when the other side plays the game"
+            "Growth is the art of feeling regularly stupid."
           </blockquote>
         </div>
       </div>

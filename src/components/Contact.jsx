@@ -2,93 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Contact = () => {
-  const Wrapper = styled.section`
-    padding: 2rem 1rem;
-
-    .text_contact {
-      text-align: center;
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      color: ${({ theme }) => theme.colors.helper};
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .contact-form {
-      width: 100%;
-      max-width: 500px;
-      padding: 1.5rem 2rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 1rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
-
-      .contact-inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        input[type='text'],
-        input[type='email'],
-        textarea {
-          font-size: 1rem;
-          padding: 0.75rem 1rem;
-          border: 1px solid #ccc;
-          border-radius: 0.5rem;
-          transition: border-color 0.3s ease;
-
-          &:focus {
-            border-color: ${({ theme }) => theme.colors.helper};
-            outline: none;
-          }
-        }
-
-        textarea::placeholder {
-          color: #aaa;
-        }
-
-        input[type='submit'] {
-          margin-top: 0.5rem;
-          padding: 0.7rem 1rem;
-          background-color: ${({ theme }) => theme.colors.helper};
-          color: white;
-          border: none;
-          border-radius: 0.5rem;
-          font-weight: 600;
-          font-size: 1rem;
-          cursor: pointer;
-          transition: transform 0.2s ease, background-color 0.3s ease;
-
-          &:hover {
-            opacity: 0.85;
-            transform: scale(0.97);
-          }
-        }
-      }
-    }
-
-    @media (max-width: 768px) {
-      padding: 2rem 0;
-
-      .container {
-        width: 90vw;
-        margin: 0 auto;
-      }
-
-      .contact-form {
-        padding: 1.25rem;
-        max-width: 100%;
-      }
-
-      .text_contact {
-        font-size: 1.5rem;
-      }
-    }
-  `;
-
   return (
     <Wrapper>
       <h2 className="text_contact">Contact Me</h2>
@@ -116,16 +29,107 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Your Message"
-              rows="5"
+              rows="4"
               autoComplete="off"
               required
             />
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send Message" />
           </form>
         </div>
       </div>
     </Wrapper>
   );
 };
+
+const Wrapper = styled.section`
+  padding: 2rem 1rem;
+
+  .text_contact {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: ${({ theme }) => theme.colors.helper};
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, rgba(30, 30, 40, 0.9), rgba(20, 20, 30, 0.95));
+    border: 1px solid rgba(147, 112, 219, 0.3);
+    border-radius: 0.5rem;
+
+    .contact-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        font-family: inherit;
+        font-size: 0.95rem;
+        padding: 0.65rem 0.875rem;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(147, 112, 219, 0.2);
+        border-radius: 0.25rem;
+        color: #1a1a2e;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.4);
+        }
+
+        &:focus {
+          border-color: ${({ theme }) => theme.colors.helper};
+          box-shadow: 0 0 0 2px rgba(147, 112, 219, 0.1);
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      input[type='submit'] {
+        margin-top: 0.25rem;
+        padding: 0.65rem 1rem;
+        background: ${({ theme }) => theme.colors.helper};
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+          opacity: 0.9;
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+
+    .container {
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    .contact-form {
+      max-width: 100%;
+    }
+  }
+`;
 
 export default Contact;
