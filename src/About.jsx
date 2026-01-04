@@ -70,6 +70,7 @@ const About = () => {
         <div className="more-section">
           <h3>More about me</h3>
           <div className="tabs">
+            <NavLink to="/uses" className="tab">Uses</NavLink>
             <NavLink to="/photographs" className="tab">Photographs</NavLink>
             <NavLink to="/poems" className="tab">Poems</NavLink>
             <NavLink to="/movies" className="tab">Movies</NavLink>

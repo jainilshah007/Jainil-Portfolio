@@ -33,19 +33,19 @@ const Home = () => {
         <div className="Main_content">
           <p>
             I dissect, tweak, and fine-tune{' '}
-            <Link>
+            <Link href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">
               language models
             </Link>—from architecture to inference. Strong math base, faster execution.
             <br /><br />
             Deep into{' '}
-            <Link>
+            <Link href="/project#ai-projects">
               AI
             </Link> and{' '}
-            <Link>
+            <Link href="/project">
               Web3
             </Link>, breaking things, fixing them, and getting excited when stuff works.
             I'm exploring how machines read{' '}
-            <Link>
+            <Link href="https://github.com/jainilshah007/BlockAudit" target="_blank" rel="noopener noreferrer">
               documents
             </Link>, understand context, and support better decisions.
             It's led me to build tools that think, remember, and sometimes surprise me.
@@ -53,6 +53,23 @@ const Home = () => {
             This site is a little personal project. Someday I hope to build something bigger—a product or maybe a company.
             For now, I'm just experimenting and following the spark.
           </p>
+
+          <div className="current-project">
+            <h3>Currently working on</h3>
+            <div className="project-card">
+              <div className="project-header">
+                <span className="project-name">SecurePR</span>
+                <Link href="https://github.com/jainilshah007/securePR" target="_blank" rel="noopener noreferrer">
+                  GitHub →
+                </Link>
+              </div>
+              <p className="project-tagline">Stop merging vulnerable code. Get AI-powered security reviews on every PR.</p>
+              <p className="project-desc">
+                A GitHub Action that acts like a security engineer on your team—reviewing every code change for vulnerabilities before merge.
+              </p>
+            </div>
+          </div>
+
           <QuoteContainer>
             <QuoteText $visible={isVisible}>
               "{quotes[currentQuote]}"
@@ -149,6 +166,51 @@ const Wrapper = styled.section`
     text-align: start;
     letter-spacing: 0.05em;
     font-weight: 500;
+  }
+
+  .current-project {
+    margin-top: 2.5rem;
+    
+    h3 {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, rgba(30, 30, 40, 0.9), rgba(20, 20, 30, 0.95));
+      border: 1px solid rgba(147, 112, 219, 0.2);
+      border-radius: 0.5rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .project-tagline {
+      color: ${({ theme }) => theme.colors.helper};
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .project-desc {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
   }
 
   @media screen and (max-width: 768px) {
