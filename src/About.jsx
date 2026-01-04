@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className="Main_content">
         <p>
-          I'm someone who gets genuinely excited when things click—when a model finally learns something useful,
+          I'm someone who gets genuinely excited when things click - when a model finally learns something useful,
           or when an idea that felt abstract starts working in code.
           <br /><br />
           My interest in AI started with the{' '}
@@ -27,7 +27,7 @@ const About = () => {
           <br /><br />
           Lately, I've been spending time at the intersection of{' '}
           <Link>AI</Link> and{' '}
-          <Link>Web3</Link>—building things like{' '}
+          <Link>Web3</Link> - building things like{' '}
           <Link href="https://github.com/jainilshah007/BlockAudit" target="_blank" rel="noopener noreferrer">
             RAG-based contract analysis
           </Link>,{' '}
@@ -39,16 +39,15 @@ const About = () => {
           </Link>.
           Not because I have all the answers, but because I find the problems interesting.
           <br /><br />
-          I'm self-taught in most of what I do. I have a degree in Electronics from{' '}
+          I'm self-taught in most of what I do. I have a degree in Electronics & Communications from{' '}
           <Link href="https://www.bvmengineering.ac.in/" target="_blank" rel="noopener noreferrer">
             BVM, Vidhyanagar
-          </Link>, but computers pulled me in a different direction. The first time I saw Google in 8th grade,
-          something shifted. I've been curious ever since.
+          </Link>, but computers pulled me in a different direction.
           <br /><br />
           Currently working at{' '}
           <Link>Capgemini</Link>{' '}
           as an Analyst, building full-stack apps and integrating AI into real workflows.
-          It's taught me that production is where ideas get tested—and humbled.
+          It's taught me that production is where ideas get tested and humbled.
           <br /><br />
           Outside work, I watch a lot of{' '}
           <NavLink className="navbar-link" to="/movies">movies</NavLink>,
